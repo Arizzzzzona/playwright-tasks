@@ -102,7 +102,7 @@ test.describe("Поиск вкладок и уведомлений по роля
   // Задание 2: Проверка уведомлений
   // 1. Найди все уведомления на странице по роли alert
   // 2. Отфильтруй уведомление с текстом "Успех!"
-  // 3. Проверь что оно видимо и имеет класс alert-success
+  // 3. Проверь что оно видимо и имеет класс /alert-success/
   test("Проверить уведомления на странице", async ({ page }) => {
     const successAlert = page.getByRole("alert").filter({ hasText: "Успех!" });
     await expect(successAlert).toBeVisible();
